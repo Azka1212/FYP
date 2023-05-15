@@ -29,4 +29,8 @@ Chapter 2: SRS document
 
 Chapter 3:
 Design document[Software-design-document.pdf](https://github.com/Azka1212/PTSD-Prediction-Tool/files/10770710/Software-design-document.pdf)
+
+FYP Thesis
+[FYP03 .docx](https://github.com/Azka1212/FYP/files/11482123/FYP03.docx)
+
  
