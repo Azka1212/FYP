@@ -1,0 +1,42 @@
+{% extends 'hospital/doctor_base.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <style media="text/css">
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+
+  </style>
+</head>
+
+<div class="container mb-3 ">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h6 class="panel-title">PTSD Predictor Test Result</h6>
+      </div>
+      
+      <form action="{% url 'result' %}" style="margin-top: 20px;">
+        <body style="text-align: center;">
+          <h1>Thank You & Allah Hafiz</h1>
+  
+          
+        </body>
+      </form>
+    </div>
+    </div>
+  </div>
+{% endblock content %}

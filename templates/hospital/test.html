@@ -1,0 +1,138 @@
+{% extends 'hospital/doctor_base.html' %}
+{% block content %}
+{% load static %}
+
+
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+</head>
+
+
+<!-- {%include 'hospital/doctor_dashboard_cards.html'%} -->
+<!-- {%block title%}PTSD Predictor{% endblock title%} -->
+
+<!-- {% block body %} -->
+
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+  </head> -->
+  <!-- <body> -->
+    <div class="container mb-3 ">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+        <h6 class="panel-title">PTSD Predictor Test Questionnnare</h6>
+      </div>
+        <!-- <h1 class="my-4 text-center">PTSD Predictor</h1> -->
+      <!-- <h1>PTSD Predictor</h1> -->
+      <form action="{% url 'result' %}" style="margin-top: 20px;">
+        {% csrf_token %}
+        
+        <!-- <p>ID:</p>
+        <input type="text" name="id">
+        <br> -->
+
+        <td style="margin-left: 20px;">Kindly Select your  Gender:</td>
+        <!-- <input type="text" name="gender"> -->
+        <!-- <p>How old are you?</p> -->
+        <input type="radio" id="male" name="gender" value="1" checked style="margin-left: 10px">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="2" style="margin-left: 10px">
+        <label for="female">Female</label><br>
+        <br>
+      
+
+        <td>Enter your Age:</td>
+        <input type="text" name="age" required="">
+        <br>
+
+        <br>
+        <td>Enter Value of Iss:</td>
+        <input type="text" name="iss" required="">
+        <br>
+
+        <br>
+        <td>Did you suffer from Inj_Vio:</td>
+        <!-- <input type="text" name="inj_vio"> -->
+        <input type="radio" id="yes" name="inj_vio" value="1" checked style="margin-left: 10px">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="inj_vio" value="0" style="margin-left: 10px">
+        <label for="no">No</label><br>
+        <br>
+
+        <br>
+        <td>Did you experience any Headache:</td>
+        <!-- <input type="text" name="head"> -->
+        <input type="radio" id="yes" name="head" value="1" checked style="margin-left: 10px">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="head" value="0" style="margin-left: 10px">
+        <label for="no">No</label><br>
+        <br>
+
+        <br>
+        <td>Did you come across any symptoms of PCA:</td>
+        <!-- <input type="text" name="pca"> -->
+        <input type="radio" id="yes" name="pca" value="1" checked style="margin-left: 10px">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="pca" value="0" style="margin-left: 10px">
+        <label for="no">No</label><br>      
+        <br>
+
+        <br>
+        <td>What level of Morphine was administered:</td>
+        <input type="text" name="morphine" required="">
+        <br>
+        
+        <br>
+        <td>Did you take any Benzo:</td>
+        <!-- <input type="text" name="benzo"> -->
+        <input type="radio" id="yes" name="benzo" value="1" checked style="margin-left: 10px">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="benzo" value="0" style="margin-left: 10px">
+        <label for="no">No</label><br>   
+        <br>
+
+        <br>
+        <td>How many Days have passed:</td>
+        <input type="text" name="days" required="">
+        <br>
+
+        <br>
+        <td>What levels of Ketamine were diagnosed:</td>
+        <input type="text" name="ketamine" required="">
+        <br>
+
+        <br>
+        <td>Can you specify the Pulse rate:</td>
+        <input type="text" name="pulse" required="">
+        <br>
+
+
+        <br>
+        <input type="submit" value='Get Result'>
+      </form>
+      </div>
+    </div>
+  <!-- </body> -->
+<!-- </html> -->
+
+<!-- {% endblock body %} -->
+{% endblock content %}
