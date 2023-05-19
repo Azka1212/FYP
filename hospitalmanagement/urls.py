@@ -85,7 +85,6 @@ urlpatterns +=[
 
 
 
-
 #---------FOR PATIENT RELATED URLS-------------------------------------
 urlpatterns +=[
 
