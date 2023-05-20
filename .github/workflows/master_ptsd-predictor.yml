@@ -19,6 +19,9 @@ jobs:
       
       - name: Install dependencies
         run: sudo apt-get install build-essential libcairo2-dev libgirepository1.0-dev
+        
+      - name: Install Libpython dependencies
+        run: sudo apt install libpython3.9-dev
 
       - name: Set up Python version
         uses: actions/setup-python@v1
