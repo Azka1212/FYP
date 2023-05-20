@@ -16,6 +16,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Install dependencies
+        run: sudo apt-get install build-essential libcairo2-dev libgirepository1.0-dev
 
       - name: Set up Python version
         uses: actions/setup-python@v1
@@ -26,6 +29,10 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
+          
+      - name: Pip installation
+        run: pip install --upgrade pip setuptools
+
       
       - name: Install dependencies
         run: pip install -r requirements.txt
