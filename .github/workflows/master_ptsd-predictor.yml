@@ -21,10 +21,8 @@ jobs:
         run: sudo apt-get update
         
       - name: Install dependencies
-        run: sudo apt-get install sox ffmpeg libcairo2 libcairo2-dev
+        run: sudo apt-get install sox ffmpeg libcairo2 libcairo2-dev libpango1.0-dev
         
-      - name: Install Libpython dependencies
-        run: sudo apt-get install texlive-full
 
       - name: Set up Python version
         uses: actions/setup-python@v1
