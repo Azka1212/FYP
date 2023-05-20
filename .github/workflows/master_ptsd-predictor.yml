@@ -65,6 +65,9 @@ jobs:
           name: python-app
           path: .
           
+      - name: Install dependencies
+        run: sudo apt-get install sox ffmpeg libcairo2 libcairo2-dev libpango1.0-dev
+          
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
