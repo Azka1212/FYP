@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'PTSD-Prediction'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_83C3118597F24239AB13CE40A85B3146 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F0FB05069FED475FBAC88D7E40263EB0 }}
